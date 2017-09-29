@@ -9,7 +9,7 @@ public class TeamTest {
 	public void addPlayerIncreasesNumberOfPlayers() {
 		Team<SoccerPlayer> soccerTeam = new Team<>("KRC Genk");
 		Assert.assertEquals(0,  soccerTeam.numberOfPlayers());
-		soccerTeam.addPlayer(new SoccerPlayer("Buffel"));
+		soccerTeam.AddPlayer(new SoccerPlayer("Buffel"));
 		Assert.assertEquals(1,  soccerTeam.numberOfPlayers());
 	}
 	
@@ -18,8 +18,8 @@ public class TeamTest {
 		Team<SoccerPlayer> soccerTeam = new Team<>("KRC Genk");
 		Assert.assertEquals(0,  soccerTeam.numberOfPlayers());
 		SoccerPlayer player = new SoccerPlayer("Buffel");
-		soccerTeam.addPlayer(player);
-		soccerTeam.addPlayer(player);
+		soccerTeam.AddPlayer(player);
+		soccerTeam.AddPlayer(player);
 		Assert.assertEquals(1,  soccerTeam.numberOfPlayers());
 	}
 }
